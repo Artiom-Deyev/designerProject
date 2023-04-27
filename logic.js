@@ -43,11 +43,10 @@ switcher.addEventListener('click', () => {
     nav.style.display = 'none';
 
     window.addEventListener('resize', (e) => {
-        if (document.documentElement.clientWidth >= 751) {
+        if (document.documentElement.clientWidth >= 750) {
             nav.style.display = 'block';
         }
     })
-
 })
 
 window.addEventListener('resize', (e) => {
@@ -62,10 +61,35 @@ window.addEventListener('resize', (e) => {
     }
 })
 
-home.addEventListener('click', () =>  nav.style.display = 'none')
-aboutMeLink.addEventListener('click', () =>  nav.style.display = 'none')
-skillsLink.addEventListener('click', () =>  nav.style.display = 'none')
-portfolioLink.addEventListener('click', () =>  nav.style.display = 'none')
+home.addEventListener('click', () =>  {
+    if (document.documentElement.clientWidth <= 751) {
+    nav.style.display = 'none';
+    }
+})
+
+aboutMeLink.addEventListener('click', () =>  {
+    if (document.documentElement.clientWidth <= 751) {
+    nav.style.display = 'none';
+    }
+})
+
+skillsLink.addEventListener('click', () =>  {
+    if (document.documentElement.clientWidth <= 751) {
+    nav.style.display = 'none';
+    }
+})
+
+portfolioLink.addEventListener('click', () =>  {
+    if (document.documentElement.clientWidth <= 751) {
+    nav.style.display = 'none';
+    }
+})
+
+contactsLink.addEventListener('click', () =>  {
+    if (document.documentElement.clientWidth <= 751) {
+    nav.style.display = 'none';
+    }
+})
 
 //Changing Language functions
 
