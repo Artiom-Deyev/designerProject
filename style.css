@@ -728,6 +728,7 @@ h1 {
   }
   .burger {
     display: block;
+    cursor: pointer;
   }
   .switcher {
     display: block;

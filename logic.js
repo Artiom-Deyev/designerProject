@@ -1,4 +1,3 @@
-
 //Navigation Logic
 const burger = document.querySelector('#burger')
 const nav = document.querySelector('#nav');
@@ -32,7 +31,7 @@ const modalTxtBtm = document.querySelector('#modal-txt-bottom')
 const layer = document.querySelector('#layer')
 
 
-//Functions
+//Functions for navigation
 burger.addEventListener('click', () => {
    
     nav.style.display = 'block';
@@ -62,6 +61,11 @@ window.addEventListener('resize', (e) => {
         nav.style.display = 'block';
     }
 })
+
+home.addEventListener('click', () =>  nav.style.display = 'none')
+aboutMeLink.addEventListener('click', () =>  nav.style.display = 'none')
+skillsLink.addEventListener('click', () =>  nav.style.display = 'none')
+portfolioLink.addEventListener('click', () =>  nav.style.display = 'none')
 
 //Changing Language functions
 
@@ -172,87 +176,10 @@ function setEngLang () {
 function changeLang (lang) {
     if (lang === 'lang-switch__ru') {
         setRuLang ()
-        // localStorage.setItem('test', 'ru')
-
-        // home.textContent = "Домашняя"
-
-        // aboutMeLink.textContent = "Обо мне"
-
-        // skillsLink.textContent = 'Навыки'
-
-        // portfolioLink.textContent = 'Портфолио'
         
-        // contactsLink.textContent = 'Контакты'
-
-        // headerTextTop.textContent = ' дизайнер'
-
-        // headerTextBottom.textContent = '24 года, Минск'
-
-        // headerTitleTop.textContent = "Денис"
-
-        // headerTitleBottom.textContent = "Новиков"
-
-        // aboutTitle.textContent = localStorage.getItem('text')
-
-        // aboutTextFirst.textContent = 'Привет, меня зовут Дима - я UX/UI дизайнер из Минска. Я люблю дизайн и все, что с ним связано';
-
-        // aboutTextSecond.textContent = 'Я изучаю "Веб-Дизайн и Интерфейсы" в IT Академии';
-
-        // aboutTextThird.textContent = 'Готов применить свои навыки на благо другим.';
-
-        // skillsTitle.textContent = 'Мои навыки';
-
-        // skillsText.textContent = 'Я пользуюсь такими програмами как:';
-
-        // portfolioTitle.textContent = 'Портфолио';
-
-        // footerTitle.textContent = 'Контакты';
-
-        // footerText.textContent = `Хотите узнать больше или просто пообщаться? Буду рад знакомству!`;
-
-        // footerBtn.textContent = 'Сообщение';
-    
     } else if (lang === "lang-switch__eng") {
         setEngLang()
-        // localStorage.setItem('test', 'eng')
-
-        // home.textContent = "Home"
-
-        // aboutMeLink.textContent = "About me"
-
-        // skillsLink.textContent = 'Skills'
-
-        // portfolioLink.textContent = 'Portfolio'
-
-        // contactsLink.textContent = 'Contacts'
-
-        // headerTitleTop.textContent = "Denis"
-
-        // headerTitleBottom.textContent = "Novikov"
-
-        // headerTextTop.textContent = ' designer'
-
-        // headerTextBottom.textContent = '24 years old, Minsk'
-
-        // aboutTitle.textContent = "About me"
-
-        // aboutTextFirst.textContent = "Hi, I'm Denis - UX/UI designer from Minsk. I'm interested in design and everything connected with it."
-
-        // aboutTextSecond.textContent = `I'm studying at courses "Web and mobile design interfaces" in IT-Academy`;
-
-        // aboutTextThird.textContent = 'Ready to implement excellent projects with wonderful people';
-
-        // skillsTitle.textContent = 'Skills';
-
-        // skillsText.textContent = 'I work in such programs as';
-
-        // portfolioTitle.textContent = 'Portfolio';
-
-        // footerTitle.textContent = 'Contacts';
-
-        // footerText.textContent = 'Want know more or just chat? You are welcome!';
-
-        // footerBtn.textContent = 'Send message';
+        
     }
 } 
 
